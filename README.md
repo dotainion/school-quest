@@ -1,16 +1,45 @@
-# React + Vite
+Public Pages
+Home Page – Overview of the platform, top schools, latest questions.
+About Page – How the platform works.
+Schools Leaderboard – Rankings of schools by points.
+Questions Feed – Browse all questions.
+Question Details – View a question and its answers.
+School Profile Page – Public profile for each school.
+Student Profile Page – Public profile for each student.
+Login Page
+Register Page
+Student Pages
+Student Dashboard – Personal activity summary.
+Ask Question Page
+My Questions Page
+My Answers Page
+Notifications Page
+Achievements/Badges Page
+Edit Profile Page
+School Competition Pages
+School Dashboard – School statistics and ranking.
+School Members Page – Students belonging to the school.
+School Challenges Page – Active competitions between schools.
+Challenge Details Page – Scores, participants, and progress.
+School vs School Results Page – Past competition results.
+Admin Pages
+Admin Dashboard
+Manage Users
+Manage Schools
+Moderate Questions & Answers
+Manage Competitions
+Reports & Analytics
+Simple MVP Version (Start Here)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+If you want to launch quickly, start with only:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Home
+Login/Register
+Questions Feed
+Question Details
+Ask Question
+Student Profile
+Schools Leaderboard
+School Profile
+Notifications
+Admin Dashboard
