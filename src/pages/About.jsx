@@ -21,7 +21,7 @@ const fadeUp = {
     },
 };
 
-const About = () => {
+export const About = () => {
     return (
         <div className="bg-white overflow-hidden">
         {/* HERO */}

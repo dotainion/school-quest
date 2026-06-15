@@ -19,7 +19,7 @@ const fadeUp = {
   },
 };
 
-const Home = () => {
+export const Home = () => {
     return (
         <div>
         {/* HERO */}
@@ -145,11 +145,11 @@ const Home = () => {
                 ].map(([value, label]) => (
                 <div className="col-md-3 mb-4" key={label}>
                     <h2 className="fw-bold text-primary">
-                    <CountUp
+                    {/*<CountUp
                         end={value}
                         duration={2.5}
                         separator=","
-                    />
+                    />*/}
                     +
                     </h2>
 
