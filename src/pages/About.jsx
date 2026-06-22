@@ -35,22 +35,22 @@ export const About = () => {
         >
             {/* Floating circles */}
             <motion.div
-            animate={{
-                y: [0, -25, 0],
-            }}
-            transition={{
-                duration: 5,
-                repeat: Infinity,
-            }}
-            className="position-absolute"
-            style={{
-                width: 300,
-                height: 300,
-                borderRadius: "50%",
-                background: "rgba(255,255,255,.08)",
-                top: "10%",
-                right: "-80px",
-            }}
+                animate={{
+                    y: [0, -25, 0],
+                }}
+                transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                }}
+                className="position-absolute"
+                style={{
+                    width: 300,
+                    height: 300,
+                    borderRadius: "50%",
+                    background: "rgba(255,255,255,.08)",
+                    top: "10%",
+                    right: "-80px",
+                }}
             />
 
             <motion.div
@@ -324,11 +324,11 @@ export const About = () => {
                 ].map(([value, label]) => (
                 <div className="col-md-3 mb-4" key={label}>
                     <h1 className="fw-bold">
-                    <CountUp
+                    {/*<CountUp
                         end={value}
                         duration={3}
                         separator=","
-                    />
+                    />*/}
                     +
                     </h1>
 

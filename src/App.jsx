@@ -11,22 +11,23 @@ import { Register } from "./pages/Register";
 import { SchoolProfile } from "./pages/SchoolProfile";
 import { SchoolsLeaderboard } from "./pages/SchoolsLeaderboard";
 import { StudentProfile } from "./pages/StudentProfile";
+import { Layout } from "./layouts/Layout";
 
 export default function App() {
     return (
         <HashRouter>
             <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/about/us" element={<About />} />
-                <Route path="/about/us" element={<Login />} />
-                <Route path="/about/us" element={<QuestionDetails />} />
-                <Route path="/about/us" element={<QuestionsFeed />} />
-                <Route path="/about/us" element={<Register />} />
-                <Route path="/about/us" element={<SchoolProfile />} />
-                <Route path="/about/us" element={<SchoolsLeaderboard />} />
-                <Route path="/about/us" element={<StudentProfile />} />
-                <Route path="/about/us" element={<Login />} />
-                <Route path="/about/us" element={<Login />} />
+                <Route element={<Layout />}>
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about/us" element={<About />} />
+                    <Route path="/question/detail" element={<QuestionDetails />} />
+                    <Route path="/question/feed" element={<QuestionsFeed />} />
+                    <Route path="/school/profile" element={<SchoolProfile />} />
+                    <Route path="/school/leader/boarad" element={<SchoolsLeaderboard />} />
+                    <Route path="/student/profile" element={<StudentProfile />} />
+                </Route>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
         </HashRouter>
