@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import CountUp from "react-countup";
 import {
   FaSchool,
   FaTrophy,
@@ -10,6 +9,7 @@ import {
   FaArrowUp,
   FaFire,
 } from "react-icons/fa";
+import { CountUpNumber } from "../components/CountUpNumber";
 
 export const SchoolProfile = () => {
   const topStudents = [
@@ -163,11 +163,7 @@ export const SchoolProfile = () => {
                     </div>
 
                     <h2 className="fw-bold">
-                      <CountUp
-                        end={stat.value}
-                        duration={2}
-                        separator=","
-                      />
+                      <CountUpNumber end={stat.value} />
                     </h2>
 
                     <p className="text-muted mb-0">

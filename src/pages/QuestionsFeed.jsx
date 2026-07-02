@@ -7,6 +7,7 @@ import {
   FaClock,
   FaFire,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const QuestionsFeed = () => {
   const [search, setSearch] = useState("");
@@ -240,9 +241,9 @@ export const QuestionsFeed = () => {
                             </small>
                           </div>
 
-                          <button className="btn btn-primary">
+                          <Link to={'/question/detail'} className="btn btn-primary">
                             View Question
-                          </button>
+                          </Link>
                         </div>
                       </div>
                     </motion.div>

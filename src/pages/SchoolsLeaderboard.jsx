@@ -7,6 +7,7 @@ import {
   FaArrowUp,
   FaSearch,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const schools = [
   {
@@ -279,6 +280,9 @@ export const SchoolsLeaderboard = () =>{
                               <span className="text-success fw-bold">
                                 <FaArrowUp /> +3
                               </span>
+                              <Link to={'/school/profile'} className="btn btn-sm link-primary ms-2">
+                                View
+                              </Link>
                             </td>
                           </motion.tr>
                         )

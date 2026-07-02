@@ -1,8 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaSchool, FaGoogle, FaFacebook } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthProvider";
 
 export const Login = () => {
+  const { signIn } = useAuth();
+
+  const navigate = useNavigate();
+
+  const submit = (e) =>{
+    e.preventDefault();
+    signIn().then(()=>navigate('/'));
+  }
+
   return (
     <div className="min-vh-100 d-flex align-items-center bg-light">
       <div className="container">
@@ -46,7 +57,7 @@ export const Login = () => {
           >
             <h2 className="fw-bold mb-4">Login</h2>
 
-            <form>
+            <form onSubmit={submit}>
               <div className="mb-3">
                 <label className="form-label">
                   Email
@@ -82,15 +93,16 @@ export const Login = () => {
                   </label>
                 </div>
 
-                <a href="#" className="text-primary">
+                <Link to="/forgot/password" className="text-primary">
                   Forgot password?
-                </a>
+                </Link>
               </div>
 
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="btn btn-primary btn-lg w-100"
+                type="submit"
               >
                 Login
               </motion.button>
@@ -116,9 +128,9 @@ export const Login = () => {
 
             <p className="text-center mt-4 mb-0 text-muted">
               Don’t have an account?{" "}
-              <a href="#" className="text-primary fw-bold">
+              <Link to="/register" className="text-primary fw-bold">
                 Sign up
-              </a>
+              </Link>
             </p>
           </motion.div>
         </div>

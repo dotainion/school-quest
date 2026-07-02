@@ -6,6 +6,7 @@ In addition to individual engagement, the platform introduces a structured compe
 
 Core Features
 Public Features
+
 Home Page – Overview of the platform, featured schools, and recent questions
 About Page – Explanation of how the platform works
 Schools Leaderboard – Ranking of schools based on performance points
@@ -36,6 +37,7 @@ Manage Schools – Maintain school records
 Moderate Questions & Answers – Content moderation
 Manage Competitions – Control challenges and events
 Reports & Analytics – Platform insights and performance tracking
+
 MVP (Minimum Viable Product)
 
 To launch quickly, the initial version should focus on core functionality:

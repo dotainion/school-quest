@@ -1,8 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaSchool, FaUserGraduate } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Register = () => {
+  const navigate = useNavigate();
+
+  const submit = (e) =>{
+    e.preventDefault();
+    navigate('/')
+  }
   return (
     <div className="min-vh-100 d-flex align-items-center bg-light">
       <div className="container">
@@ -46,7 +53,7 @@ export const Register = () => {
           >
             <h2 className="fw-bold mb-4">Create Account</h2>
 
-            <form>
+            <form onSubmit={submit}>
               {/* Name */}
               <div className="mb-3">
                 <label className="form-label">
@@ -89,12 +96,9 @@ export const Register = () => {
                   School
                 </label>
 
-                <select className="form-select form-select-lg">
-                  <option>Select your school</option>
-                  <option>West Academy</option>
-                  <option>Central High</option>
-                  <option>Future Scholars</option>
-                  <option>Green Valley College</option>
+                <select className="form-select form-select-lg" defaultValue={''}>
+                  <option hidden value={''}>Select your school</option>
+                  <option>JW Fletcher</option>
                 </select>
               </div>
 
@@ -114,6 +118,7 @@ export const Register = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="btn btn-primary btn-lg w-100"
+                type="submit"
               >
                 Create Account
               </motion.button>
@@ -122,9 +127,9 @@ export const Register = () => {
             {/* Login Link */}
             <p className="text-center mt-4 mb-0 text-muted">
               Already have an account?{" "}
-              <a href="#" className="text-primary fw-bold">
+              <Link to="/login" className="text-primary fw-bold">
                 Login
-              </a>
+              </Link>
             </p>
           </motion.div>
         </div>
