@@ -90,9 +90,9 @@ export const QuestionsFeed = () => {
               </div>
 
               <div className="mt-4 mt-lg-0">
-                <button className="btn btn-light btn-lg">
+                <Link to={'/ask/a/question'} className="btn btn-light btn-lg">
                   Ask a Question
-                </button>
+                </Link>
               </div>
             </div>
           </motion.div>

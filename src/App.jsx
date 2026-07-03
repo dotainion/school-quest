@@ -15,6 +15,7 @@ import { Layout } from "./layouts/Layout";
 import { ForgotPassword } from "./pages/ForgotPassword";
 import { AuthProvider } from "./context/AuthProvider";
 import { NotFound } from "./pages/NotFound";
+import AskQuestion from "./pages/AskQuestion";
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
                         <Route path="/school/profile" element={<SchoolProfile />} />
                         <Route path="/school/leader/boarad" element={<SchoolsLeaderboard />} />
                         <Route path="/student/profile" element={<StudentProfile />} />
+                        <Route path="/ask/a/question" element={<AskQuestion />} />
                     </Route>
                     <Route path="/page/not/found" element={<NotFound />} />
                     <Route path="/login" element={<Login />} />
